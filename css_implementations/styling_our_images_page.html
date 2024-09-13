@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images</title>
+    <title>Styled Image Page</title>
 </head>
-<body>
-    <h1>Image Web Page</h1>
+<!-- ? if i were to add COLOR style to the body, it would cascade
+down to all the other text-->
+<!-- ! somewhere down the file the same style applied to the body such as font style
+that will be the acutal color. it is based on whatever is applied last.-->
+<body style="background-color: #000;">
+    <!-- * INLINE STYLING -->
+    <!-- inline styling refers to  -->
+
+    <!-- * semi colons are important or else it will get confused.
+    without the semi colon after the red it will think you are referring to the color size in this regards and that isnt a thing
+    bc you only change control the font size of text-->
+                    <!-- * HEXIDECIMALS
+                    are better used instread of just directly stating the color.
+                    this way you have better control over the shading-->
+                    <!-- ? how can you find more colors? -->
+                    <!-- you can google the html color picker  -->
+    <h1 style="color: #FF3300; font-size: 50px;">Image Web Page</h1>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8H0yA3L6gatPVrG8wzq3XAmrQ8FQb3vVfgw&s" alt="batman_shadow">
     <img src="batman_image.jpeg" alt="batman">
-    <p>
+    <p style="color: #FF5555; font-size: 21px; font-family: sans-serif;">
         Lorem ipsum dolor sit amet consectetur adipisicing 
         elit. Odio ut quasi dolorum, veritatis non temporibus 
         voluptates porro possimus aliquid sapiente repudiandae 
