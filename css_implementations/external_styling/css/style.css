@@ -1,0 +1,11 @@
+/* body is the selector */
+/* in the case below, you selected the body tag to apply stlyings on */
+body {
+    background-color: #000;
+    color: #b3090c;
+    font-size: 21px;
+}
+
+h1 {
+    font-size: 70px;
+}
