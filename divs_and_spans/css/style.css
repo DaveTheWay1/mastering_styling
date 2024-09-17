@@ -1,0 +1,15 @@
+body {
+    background-color: #15d0ed;
+    color: white;
+}
+
+div{
+    background-color: pink;
+    width:500px;
+}
+
+span{
+    color: darkblue;
+    font-size: 25px;
+    font-weight: bold;
+}
