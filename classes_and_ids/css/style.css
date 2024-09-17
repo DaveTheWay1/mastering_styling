@@ -1,0 +1,17 @@
+body{
+    background: black;
+    color: lightcoral;
+}
+
+#top-section{
+    background-color:bisque;
+}
+
+#bottom-section{
+    background-color: white;
+}
+
+.intro{
+    font-size: 30px;
+    color: black;
+}
