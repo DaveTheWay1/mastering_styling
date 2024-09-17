@@ -1,0 +1,24 @@
+INLINE ELEMENTS
+
+Common Inline Elements:
+
+<span> - Generic container for inline content
+<a> - Anchor (link)
+<img> - Image
+<strong> - Strong importance (usually displayed as bold)
+<em> - Emphasized text (usually displayed as italic)
+<i> - Italic text
+<b> - Bold text
+<u> - Underlined text
+<small> - Smaller text
+<sup> - Superscript text
+<sub> - Subscript text
+<mark> - Highlighted text
+<code> - Inline code snippet
+<abbr> - Abbreviation
+<cite> - Citation
+<time> - Date and/or time
+<br> - Line break
+<input> - Input field in a form
+<label> - Label for form controls
+<q> - Inline quotation

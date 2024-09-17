@@ -1,0 +1,24 @@
+BlOCK ELEMENTS
+
+Common Block Elements:
+
+<div> - Generic container for flow content
+<p> - Paragraph
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6> - Heading tags
+<ul> - Unordered list
+<ol> - Ordered list
+<li> - List item (in both ordered and unordered lists)
+<section> - Defines a section in a document
+<article> - Represents independent, self-contained content
+<nav> - Navigation links
+<aside> - Sidebar content
+<header> - Header section of a page or section
+<footer> - Footer section of a page or section
+<main> - Main content area of a document
+<figure> - Represents self-contained content, like images
+<blockquote> - Quotation
+<form> - HTML form for user input
+<table> - Table element
+<hr> - Horizontal rule (divider)
+<pre> - Preformatted text
+<address> - Contact information for the author/owner of a document
