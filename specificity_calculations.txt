@@ -1,0 +1,51 @@
+Specificity Calculation
+When multiple selectors target the same element, CSS calculates 
+specificity based on a point system:
+
+IDs are the most specific and contribute the highest value (100).
+Classes, pseudo-classes, and attributes are next, contributing 
+a medium value (10).
+Elements and pseudo-elements (e.g., ::before, ::after) are the least 
+specific and contribute a low value (1).
+
+Example:
+css
+
+div { color: blue; }          /* 1 point */
+.button { color: red; }       /* 10 points */
+#header { color: green; }     /* 100 points */
+
+The general rule of thumb is that more specific selectors take 
+precedence over less specific ones. Here’s the list of selector 
+types ordered by specificity and priority (from lowest to highest):
+
+Element/Type selectors (e.g., div, p, h1)
+
+These select elements based on their tag name.
+Example: p { color: blue; }
+Class selectors (e.g., .class-name)
+
+These select elements based on the class attribute.
+Example: .button { color: red; }
+Attribute selectors (e.g., [type="text"])
+
+These select elements based on an attribute.
+Example: [type="text"] { border: 1px solid; }
+Pseudo-classes (e.g., :hover, :first-child)
+
+These select elements based on their state or position.
+Example: a:hover { color: green; }
+ID selectors (e.g., #id-name)
+
+These select elements based on their id attribute.
+Example: #header { background-color: yellow; }
+Inline styles (added directly to an element using the style 
+attribute in HTML)
+
+These are declared directly in the element and override any 
+CSS in stylesheets.
+Example: <div style="color: purple;">
+Important declarations (!important)
+
+This overrides all other styles, even inline styles.
+Example: p { color: black !important; }
