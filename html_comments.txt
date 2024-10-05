@@ -1,0 +1,11 @@
+HTML COMMENTS
+<--- should NOT be done --->
+why?
+HTML comments can break your styling 
+and leave you wondering where you went wrong,
+therefore, they should not be done.
+
+INSTEAD:
+for notes regarding css, youre better off using css
+comments
+/* this is a comment */
