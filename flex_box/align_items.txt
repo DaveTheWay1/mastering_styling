@@ -1,0 +1,20 @@
+ALIGN ITEMS (VERTICAL)
+
+use align-items to help alig items vertically and accepts the following values:
+    flex-start: Items align to the top of the container.
+    flex-end: Items align to the bottom of the container.
+    center: Items align at the vertical center of the container.
+    baseline: Items display at the baseline of the container.
+    stretch: Items are stretched to fit the container.
+
+example:
+#id {
+  display: flex;
+align-items: flex-end;
+}
+
+Yes, for the align-items property to work as expected, you need to have 
+a container with display: flex (or display: inline-flex) or display: grid. 
+This is because align-items is part of the Flexbox and Grid Layout modules 
+in CSS, and it controls how items are aligned along the cross-axis 
+(perpendicular to the main axis).

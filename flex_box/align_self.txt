@@ -1,0 +1,23 @@
+ALIGN SELF works just like ALIGN ITEMS except it is used on individual items.
+
+there can be multiple of that item. for example: lets say in a group of colors we
+have different colors and yellow. we give the yellow a class and we are able to used that
+align-self on that yellow.
+
+align-self is used to help align items vertically and accepts the following values:
+    flex-start: Items align to the top of the container.
+    flex-end: Items align to the bottom of the container.
+    center: Items align at the vertical center of the container.
+    baseline: Items display at the baseline of the container.
+    stretch: Items are stretched to fit the container.
+
+example
+
+#color_div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+align-self: flex-end;
+}

@@ -1,0 +1,32 @@
+FLEX-WRAP
+
+flex-wrap property, which accepts the following values:
+
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse
+
+example:
+
+#div {
+  display: flex;
+flex-wrap:wrap;
+flex-direction:column;
+}
+
+for better understanding, this property works best when we want things to fit on screen, 
+including when the width of the screen decrease, but instead of cutting out the screen it
+allows the element to wrap around itself.
+
+********* a normal size width
+
+******shorter width cause a cut off for the element
+
+******
+***   shorter width, the element wrapped around instead of cutting off 
+
+***
+******  shorter width, the element wrapped around instead of cutting off
+        but instead of going below, as it goes reverse, it goes upward 
+        and from right to left
+
