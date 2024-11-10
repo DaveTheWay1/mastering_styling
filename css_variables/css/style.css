@@ -1,0 +1,38 @@
+/* * CSS VARIABLES */
+/* most commmonly you want to delcare your css variables in the root or html document */
+/* css variables cascade down and can be inherited or overwritten further down the file*/
+
+body{
+  background-color: var(--background-color, pink);
+  /* what this does is, if there is no variable of background color then it will fall back to the color of pink */
+}
+
+:root {
+  --div-background-color: red;
+  --text-color: black;
+  --div-padding:20px;
+  --div-margin: 10px;
+  /* the above is an example of a css varibale */
+  /* to create a css varaibles "--" at the front of the name and throughout is required,
+  and then you give it a value, in this case, red.*/
+}
+
+/* * the below is how to apply the css variables created above */
+/* * use the proper property, and if it is a variable then you apply the variable by passing
+* it in to the var function like in the below*/
+.child{
+  background-color: var(--div-background-color);
+  color: var(--text-color);
+}
+
+/* * this works bc, as said above, /* css variables cascade down and can be inherited 
+or overwritten further down the file. */ 
+.one {
+  --div-background-color: blue;
+  --text-color: white;
+}
+
+.one-one, .one-two{
+  margin: var(--div-margin);
+  padding: var(--div-padding);
+}
