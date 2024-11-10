@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    height: 100vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    border: 5px solid black;
+    font-weight: 700;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* * transform rotate */
+/* div{ */
+    /* transform: rotate(90deg); */
+    /* usings turn instead, for example; rotate(.25turn)
+    25 = 90deg. */
+    /* * rotateX(). when you use this one is pushing away from us, actually 
+    moving away from us by leaning the top forward and goes all ground that way.
+    when you pass in a positive number. 
+    it comes towards us when we use a negative number. */
+    /* * rotateY(). when you use this property, it does the same as X as it turns the element 
+    in a direction except Y rotates it towards the left or right*/
+    /* *^^^^ X rotates vertically while Y rotates horizontally */
+    
+    /* * rotateZ does the same as rotate()  */
+    /* which either rotates clockwise or counter clock wise depending on whether
+    and positive or a negative was passed. */
+/* } */
+
+/* * transform scale */
+/* div{ */
+    /* transform:scaleX(5) ; */
+    /* with 1 number alone within the parenthesis, 
+    it will expand the x and the y by that amount */
+    /* if you pass in two values, the first value
+    will be x, and the second value will be y  */
+    /* * scaleX, scaleY, scaleZ */
+    /* singularly scale x and y take in one value
+    and apply that value to its growth */
+    /* scaleZ applies it in a 3d version but you must
+    have 3d involved */
+    /* * scale stretches all around, x stretches wide, y stretches tall, and z stretches in 3d  */
+/* } */
+
+/* * transform translate */
+/* div{ */
+    /* transform: translate(-300%); */
+    /* position: relative; */
+    /* Y moves it vertically, X moves it horizontally */
+    /* you can use translate() and pass two args; first one is x and the second is y. */
+/* } */
+
+/* div::after{
+    content:'After';
+    background:red;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+} */
+
+/* * transform scew */
+/* div{
+    transform: skew(100deg)
+} */
+/* this slants the elements in the direction passed as an argument */
+/* this working like the others in which the x and y except it slants that direction instead
+of rotating */
+
+/* * combining Transforms */
+/* div{
+    transform: rotate(190deg) scale(.80) translate(200px, 150px);
+} */
+
+/* ! a transform is one property. if you want to override anything you have to override 
+! evereything or none of it*/
+
+/* div{
+    transform: scale(1.2) translateX(50px);
+} */
+    /* * the above and below used to be 
+    the only way to accomplish this until we got 
+    css variables */
+
+/* .big{
+    transform: scale(2) translateX(50px);
+} */
+
+/* what happened in the above is that, because we used transform again, it took
+in the new value. just like in python, when we apply a new value to and already existinh
+variable, it takes that new value. so, in the above, the intention was to increase the scale
+to 2. when we did that it left out the translate. we had to reinclude it so that the translate
+would remain. */
+
+/* * transform w/ variables */
+div{
+    transform:scale(var(--scale, 1.2))
+    translateX(var(--translate-x, 50px))
+    skew(var(--skew,10deg))
+}
+
+.big{
+    --scale: 2;
+}
+/* * we, instead of redefining the transform, we redefined the variable preventing
+the redefinement of the entire transform property. */
+.move{
+    --translate-x: -70px;
+}
+
+.skew {
+    --skew: 50deg
+}
