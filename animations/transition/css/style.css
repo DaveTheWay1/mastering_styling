@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    background-color: #155270;
+}
+.btn {
+    display: flex;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 1em;
+    color:white;
+    background-color: #319fd6;
+    border: solid white 5px;
+    border-radius: 10px;
+
+        /* defines which property the transition affect
+    be applied to */
+    /* * transition-property: transform; */
+    /* defines how long the transition affect should
+    take to complete */
+    /* * transition-duration: 0.3s; */
+    /* defines acceleration curve for the transition */
+    /* values consist of: ease-in, ease-in, ease-in-out, and ease (the default) */
+    /* * transition-timing-function: ease; */
+    /* defines the delay before the transition should take affect. */
+    /* * transition-delay: 0s; */
+
+    /* ! while the above is great, it can be shorted using transition */
+    transition: transform 0.3s, background-color 0.3s;
+    /* it is shortened down here even more because 
+    the transition deloy of 0 is default so it is not necessary
+    AND 
+    the transition timing function of ease is also default
+    so that is also not necessary */
+
+    /* ! instead of speciially writing in the transform and backgrounnd color and a time,
+    ! an alternative for the above is: 
+    transition: all 0.3s;
+    */
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+    background-color: #60b2db;
+    /* now that we also have a background color
+    and we intend to use it for animation */
+}
