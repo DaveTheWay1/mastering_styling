@@ -48,3 +48,15 @@ body{
     /* now that we also have a background color
     and we intend to use it for animation */
 }
+
+/* ! IMPORTANT TO NOTE */
+/* * we could've just left btn hover with the transofrm and background
+* response, however, that was not what we desired */
+/* by having the transform and background on the onhover and there only,
+we are essentially setting it to do that task immediately.
+* **** HOWEVER, when we add the transition we are able to have more control
+* over the response time and speed of that task being complete.*/
+
+/* ? how does transition tie itself with tranform and cover ? */
+/* * you can think of transition as "animate these properties if they change"
+in other words, when the hover takes affect, it is triggering the transition to do its part */
