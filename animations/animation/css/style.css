@@ -1,0 +1,46 @@
+/* * Utility Classes */
+
+/* * Animations */
+
+section{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-400px);
+    }
+    to{
+      transform: translateX(0);
+    }
+}
+
+/* .heading-1{ */
+  /* animation: name duration timing-function delay
+  iteration-count direction fill-mode;  */
+
+  /* animation: slideInLeft 1s ease-in; */
+
+  /* animation-name: slideInLeft; */
+  /* animation-duration: 1s ; */
+  /* animation-timing-function: ease-in; */
+  /* animation-iteration-count: 1; */
+  /* animation-direction: normal; */
+  /* animation-fill-mode: forwards; */
+
+  /* * what fill mode does is:
+  negates the transform. 
+  if set to none, it will move 150 to the left
+  if its set to forwards it will remain at the center 
+  if it is background it will get push 150 
+  if set to both is will follow through with the key frame. */
+
+  /* transform: translateX(-150px); */
+/* } */
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
+}
