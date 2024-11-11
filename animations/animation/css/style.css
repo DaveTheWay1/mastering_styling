@@ -44,3 +44,7 @@ section{
 .slideInLeft {
   animation: slideInLeft 1s ease-in;
 }
+/* ! before we had it set to the .heading-1 class, however, the animation
+is named on the element itself which is bad for reusability 
+* so instead of selecting it by its reusability, we create a utility class
+like in the above */
