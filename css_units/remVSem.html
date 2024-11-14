@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem vs em</title>
+    <style>
+        .one-em{
+            font-size: 1em;
+        }
+
+        .one-rem{
+            font-size: 1rem;
+        }
+
+        .two-em{
+            font-size: 2em;
+        }
+
+        .two-rem{
+            font-size: 2rem;
+        }
+
+        .two-hundred-percent{
+            font-size: 200%;
+        }
+
+        .icon-container.large{
+            font-size: 30px;
+        }
+
+        .em-icon{
+            width: 1em;
+            height: 1em;
+        }
+
+        .rem-icon{
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .parent{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- * rem and em are relative to the font size -->
+    <div class="one-rem">1rem</div>
+    <!-- * rem is relative to the root, in this case our body -->
+    <div class="one-em">1em</div>
+    <!-- * em is not relative to the root, but to its 
+        * parent; the body is parent to the div -->
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2rem</div>
+    <hr>
+    <div class="parent">
+        <div class="one-rem">1rem</div>
+        <!-- * sticks to the root size -->
+        <div class="one-em">1em</div>
+        <!-- * sticks to the parent size , in this case div class parent which
+        had a font increase of 30px -->
+        <div class="two-rem">2rem</div>
+        <!-- * sticks to the root size -->
+        <div class="two-em">2rem</div>
+        <!-- * sticks to the parent size , in this case div class parent which
+        had a font increase of 30px -->
+    </div>
+    <hr>
+    <div class="icon-container">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon</span>
+    </div>
+
+    <div class="icon-container">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div>
+
+    <div class="icon-container large">
+        <div class="icon em-icon"></div>
+        <span class="icon-text">1em icon</span>
+    </div>
+
+    <div class="icon-container large">
+        <div class="icon rem-icon"></div>
+        <span class="icon-text">1rem icon</span>
+    </div>
+</body>
+</html>
+
+<!-- * BREAK DOWN -->
+<!-- * em: is 100% of the parent. for every 1 = 100% -->
+<!-- * rem: is 100% of the root. for every 1 = 100% -->

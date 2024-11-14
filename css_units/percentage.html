@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Width</title>
+    <style>
+        body{
+            border: solid black 5px;
+        }
+        .box{
+            border: solid red 5px;
+        }
+        .parent{
+            border: solid green 5px;
+        }
+        .fifty-percent{
+            width:50%
+        }
+        .one-hundred-pixels{
+            width:135px;
+        }
+        .parent{
+            width:135px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box fifty-percent">50%</div>
+    <div class="box one-hundred-pixels">100px</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred-pixels">100px</div>
+    </div>
+</body>
+</html>
+
+<!-- * BREAKDOWN ON PERCENTAGES -->
+<!-- 
+    Percentages go based off their PARENTS.
+    Whatever width or height the parents has, 
+    if the width of the child is being set to 50%,
+    the child's width will be 50% of the parent
+    and vice versa when it comes to height.
+-->
+
+<!-- ! *%%%%%%+PERCENTAGES ON FONT SIZE%%%%%%%%%%%%%*-->
+<!-- * fonts work exactly the same as the em unit size
+as the em unit size is based off the font size of the parent.-->
