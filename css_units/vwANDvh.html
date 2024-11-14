@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Width</title>
+    <style>
+        body{
+            border: solid black 5px;
+        }
+        .box{
+            border: solid red 5px;
+        }
+        .parent{
+            border: solid green 5px;
+        }
+        .fifty-vw{
+            width: 50vw;
+        }
+
+        .fifty-percent{
+            width:50%
+        }
+        .twenty-five-vh{
+            height: 25vh;
+        }
+        .parent{
+            width:25%
+        }
+    </style>
+</head>
+<body>
+    <div class="box fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+    </div>
+</body>
+</html>
+
+<!-- * VIEW HIEGHT & VIEW WIDTH BREAKDOWN
+View Height and View Width are ALWAYS based off the 
+width and height of the entire screen size.
+No matter what it is placed in, it will be the percentage 
+size based off whatever the view screen is. Every 1 unit in 
+vh & vw is considered 1 percent. So, 25, 50, 35, will be that
+but in percentage TO the enitre screen size.
+-->
